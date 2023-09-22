@@ -1,8 +1,2 @@
 ﻿  Server.cpp
-C:\Users\com\source\repos\WWW\WWW\Server.cpp(31,27): warning C4244: '=': 'u_long'에서 'USHORT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\com\source\repos\WWW\WWW\Server.cpp(45,6): warning C4101: 'len' :참조되지 않은 지역 변수입니다.
-C:\Users\com\source\repos\WWW\WWW\Server.cpp(41,9): warning C4101: 'client_sock' :참조되지 않은 지역 변수입니다.
-C:\Users\com\source\repos\WWW\WWW\Server.cpp(44,7): warning C4101: 'buf' :참조되지 않은 지역 변수입니다.
-C:\Users\com\source\repos\WWW\WWW\Server.cpp(42,14): warning C4101: 'clientaddr' :참조되지 않은 지역 변수입니다.
-C:\Users\com\source\repos\WWW\WWW\Server.cpp(43,6): warning C4101: 'addrlen' :참조되지 않은 지역 변수입니다.
   WWW.vcxproj -> C:\Users\com\source\repos\WWW\x64\Debug\WWW.exe
