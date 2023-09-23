@@ -1,5 +1,5 @@
 /*
-	sockaddr에서 포트 가져올시 바이트 정렬 함수 ntohs가 에러남
+	serveraddr에서 포트 가져올시 바이트 정렬 함수 ntohs가 에러남
 	밑에있는 #define _WINSOCK_DEPRECATED_NO_WARNINGS 를 사용하거나 
 	inet_ntoa() 대신 inet_ntop() or InetNtop() 를 사용
 */
@@ -56,11 +56,12 @@ int main() {
 	if (listen_sock == INVALID_SOCKET) err_quit("socket()");
 
 	// bind()
-	sockaddr_in sockaddr;
-	sockaddr.sin_family = AF_INET;
-	sockaddr.sin_port = htons(SERVERPORT);
-	sockaddr.sin_addr.s_addr = htonl(INADDR_ANY);
-	retval = bind(listen_sock, (SOCKADDR*)&sockaddr, sizeof(sockaddr));
+	sockaddr_in serveraddr;
+	ZeroMemory(&serveraddr, sizeof(serveraddr));
+	serveraddr.sin_family = AF_INET;
+	serveraddr.sin_port = htons(SERVERPORT);
+	serveraddr.sin_addr.s_addr = htonl(INADDR_ANY);
+	retval = bind(listen_sock, (SOCKADDR*)&serveraddr, sizeof(serveraddr));
 	if (retval == SOCKET_ERROR) err_quit("bind()");
 
 	// listen()

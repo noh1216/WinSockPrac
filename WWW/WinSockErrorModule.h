@@ -10,5 +10,5 @@
 
 using namespace std;
 
-void err_quit(const char* msg);
-void err_display(const char* msg);
+void err_quit( char* msg);
+void err_display(char* msg);
