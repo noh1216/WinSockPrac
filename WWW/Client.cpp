@@ -17,7 +17,7 @@ int main() {
 	SOCKET client_sock = socket(AF_INET, SOCK_STREAM, 0);
 	if (client_sock == INVALID_SOCKET) cout << "socket()" << endl;
 
-	//connedt()
+	//connect()
 	SOCKADDR_IN serveraddr;
 	ZeroMemory(&serveraddr, sizeof(serveraddr));
 	serveraddr.sin_addr.s_addr = inet_addr(SERVERIP);
@@ -25,7 +25,6 @@ int main() {
 	serveraddr.sin_port = htons(SERVERPORT);
 	retval = connect(client_sock, (SOCKADDR*)&serveraddr, sizeof(serveraddr));
 	if (retval == SOCKET_ERROR) cout <<"connect()" << endl;
-	cout << retval << endl;
 
 	// 데이터 통신에 사용할 변수
 	char buf[BUFSIZE];

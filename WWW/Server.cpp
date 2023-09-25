@@ -86,7 +86,7 @@ int main() {
 
 		// 접속한 클라이언트 정보
 		cout << endl << "[TCP 서버] 클라이언트 접속 : IP 주소=" << inet_ntoa(clientaddr.sin_addr)
-			<< ", 포트=" << ntohs(clientaddr.sin_port) << endl; // *바이트정렬 빼볼것!
+			<< ", 포트=" << ntohs(clientaddr.sin_port) << endl; // *바이트정렬 빼볼것! <-- 에러남
 
 		while (1) {
 			// 고정길이 데이터 받기

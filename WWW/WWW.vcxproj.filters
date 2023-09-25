@@ -16,6 +16,9 @@
     <Filter Include="소스 파일\err_modules">
       <UniqueIdentifier>{712337b8-6361-4e25-ab1f-5a23ae333f86}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\TCPServer_pratice1">
+      <UniqueIdentifier>{ec312773-7684-47fd-a5ad-e0b3150a905b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Server.cpp">
@@ -23,6 +26,9 @@
     </ClCompile>
     <ClCompile Include="WinSockErrorModules.cpp">
       <Filter>소스 파일\err_modules</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPServer_chat_practice1.cpp">
+      <Filter>소스 파일\TCPServer_pratice1</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

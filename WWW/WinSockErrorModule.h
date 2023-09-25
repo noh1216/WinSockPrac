@@ -1,7 +1,6 @@
 #pragma once
 #include <iostream>
 #include <stdlib.h>
-#include <stdio.h>
 
 // WinSock Libaray
 #include <winsock2.h>
