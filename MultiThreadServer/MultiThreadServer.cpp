@@ -1,12 +1,11 @@
 /*
 	serveraddr에서 포트 가져올시 바이트 정렬 함수 ntohs가 에러남
-	밑에있는 #define _WINSOCK_DEPRECATED_NO_WARNINGS 를 사용하거나
+	밑에있는 #define _WINSOCK_DEPRECATED_NO_WARNINGS 를 사용하거나 
 	inet_ntoa() 대신 inet_ntop() or InetNtop() 를 사용
 
 	Windows.h 위에 winsock2.h 선언 할 것
 	Windows.h에 구버전 winsock.h가 있어서 충돌남
 */
-
 #define _WINSOCK_DEPRECATED_NO_WARNINGS 
 
 #include <iostream>
@@ -46,7 +45,8 @@ DWORD WINAPI ProcessClient(LPVOID arg) {
 			break;
 
 		buf[retval] = '\0';
-		cout << "[TCP/" << inet_ntoa(clientaddr.sin_addr) << ":" << ntohl(clientaddr.sin_port) <<" " << buf << endl;
+		cout << "[TCP/" << inet_ntoa(clientaddr.sin_addr) << ":" 
+			<< ntohs(clientaddr.sin_port) <<"] " << buf << endl;
 
 		retval = send(client_sock, buf, retval, 0);
 		if (retval == SOCKET_ERROR) {
@@ -57,7 +57,8 @@ DWORD WINAPI ProcessClient(LPVOID arg) {
 
 	// closesocket
 	closesocket(client_sock);
-	cout << "[TCP 서버] 클라이언트 종료: IP 주소=" << inet_ntoa(clientaddr.sin_addr) <<
+	cout << "[TCP 서버] 클라이언트 종료: IP 주소=" 
+		<< inet_ntoa(clientaddr.sin_addr) <<
 		", 포트=" << ntohs(clientaddr.sin_port) << endl;
 	return 0;
 }
