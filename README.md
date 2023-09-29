@@ -24,17 +24,12 @@
 ### MultiThreadServer
 > - [x] MultiThreadServer.cpp : 멀티스레드를 이용한 서버 데이터를 받고(send) 다시 돌려주는(recv) 코드 [+WWW/Server.cpp와 동일]
 
-<<<<<<< HEAD
-### clientPrac 
-> - [ ] TCPClient_chat_practice1.cpp : 클라이언트와 데이터를 주고 받는 서버 프로그램을 작성하려 헀으나 				
-귀차니즘과 훈련 이슈로 터치 못하는 중(추후에 멀티스레드 이용해서 채팅프로그램으로 만들예정)
-
 ### Thread 
 > - [x] ExThread1 : 스레드 생성, 구조체인자 동적할당 후 전달
-=======
+
+
 ### WinSockPrac 
 > WinsockChatting : 클라이언트와 데이터를 주고 받는 서버 프로그램을 작성하려 헀으나 				
 					귀차니즘과 훈련 이슈로 터치 못하는 중(추후에 멀티스레드 이용해서 채팅프로그램으로 만들예정)
-> > - [ ] TCPClient_chat_practice1.cpp : 고정+가변 형식 데이터 송수신
-> > - [ ] TCPClient_chat_practice1.cpp : 고정+가변 형식 데이터 송수신
->>>>>>> server_prac
+>> - [ ] TCPClient_chat_practice1.cpp : 고정+가변 형식 데이터 송수신
+>> - [ ] TCPClient_chat_practice1.cpp : 고정+가변 형식 데이터 송수신
