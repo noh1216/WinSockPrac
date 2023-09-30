@@ -17,9 +17,15 @@
 * * *
 
 ### WWW
-> - [x] Client.cpp : 데이터를 서버에 보내고(send) 다시 받는(recv)코드
-> - [x] Server.cpp : recvn()으로 고정+가변 데이터를 받는 파일.. 이었으나 복사를 안하고 쓰는 바람에 멀티스레드 파일이 되어버림;;
-
+> TCPSample
+>> - [x] TCPServer.cpp : recvn()으로 고정+가변 데이터를 받는 파일.. 이었으나 복사를 안하고 쓰는 바람에 멀티스레드 파일이 되어버림;;
+>> - [x] TCPClient.cpp : 데이터를 서버에 보내고(send) 다시 받는(recv)코드
+> UDPSample
+>> - [x] UDPServer.cpp : 클라이언트에서 준 데이터를 받고(recvfrom) 다시 돌려보냄(sendto)
+>> - [x] UDPClient.cpp : 서버에 데이터를 보내고(sendto) 다시 받음(recvfrom)
+> BroadcastSample
+>> - [x] BoardcastReceiver.cpp : 브로드캐스트로 받은 데이터 출력
+>> . [x] BoardcastSender.cpp : socket에 브로드캐스트를 활성화 하고 데이터를 보냄
 
 ### MultiThreadServer
 > - [x] MultiThreadServer.cpp : 멀티스레드를 이용한 서버 데이터를 받고(send) 다시 돌려주는(recv) 코드 [+WWW/Server.cpp와 동일]
