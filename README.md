@@ -25,7 +25,10 @@
 >> - [x] UDPClient.cpp : 서버에 데이터를 보내고(sendto) 다시 받음(recvfrom)
 > BroadcastSample
 >> - [x] BoardcastReceiver.cpp : 브로드캐스트로 받은 데이터 출력
->> . [x] BoardcastSender.cpp : socket에 브로드캐스트를 활성화 하고 데이터를 보냄
+>> - [x] BoardcastSender.cpp : socket에 브로드캐스트를 활성화 하고 데이터를 보냄
+> MulticastSample
+>> - [x] MulticastSender.cpp : socket에 멀티캐스팅을 활성화하고 멀티캐스팅 그룹에 데이터를 보냄
+>> - [x] MulticastReveiver.cpp : socket에 멀티캐스팅을 활성화하고 그룹에 가입&탈퇴 함 (실행시킨 프로세스 모두가 데이터를 받음)
 
 ### MultiThreadServer
 > - [x] MultiThreadServer.cpp : 멀티스레드를 이용한 서버 데이터를 받고(send) 다시 돌려주는(recv) 코드 [+WWW/Server.cpp와 동일]
