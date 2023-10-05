@@ -10,6 +10,7 @@
 > - **clientPrac** : 클라이언트 코드 연습파일 
 > - **MultiThreadServer** : 멀티스레드 서버 구현
 > - **Thread** : 스레드 연습용
+> - **GUIProgram** : Windows.h API를 활용한 GUI 프로그램 모음
 > - _**ErrorModules** : (번외) 에러 출력 코드포함_
 
 
@@ -36,6 +37,9 @@
 ### Thread 
 > - [x] ExThread1 : 스레드 생성, 구조체인자 동적할당 후 전달
 
+### GUIProgram
+> - [ ] WinApp.cpp : Window GUI 를 띄우고 글자를 입력할 수 있게 하는 프로그램 (메모장같은 느낌)(p.309)
+> - [ ] GUITCPServer.cpp : TCP서버의 메인을 스레드로 처리하고 소켓 클라이언트 통신도 각각의 스레드를 이용해 처리한다. 메인 GUI에는 클라이언트의 채팅내용을 읽기모드로 볼 수 있다.(클라이언트는 TCPClient.cpp 이용)
 
 ### WinSockPrac 
 > WinsockChatting : 클라이언트와 데이터를 주고 받는 서버 프로그램을 작성하려 헀으나 				
